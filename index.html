@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <main>
+      <section class="left">
+        <div class="card first-card">
+          <div class="card-content">
+            <img src="./images/card-logo.svg" alt="Credit card" />
+            <h3 class="number">0000 0000 0000 0000</h3>
+            <div class="card-dets">
+              <div class="name">
+                <p>Jane Applesseed</p>
+              </div>
+              <div class="date">
+                <span class="month">00</span>
+                <span>/</span>
+                <span class="year">00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card second-card">
+          <span class="cvc">000</span>
+        </div>
+      </section>
+      <form action="">
+        <div class="name-input">
+          <label for="name">Cardholder Name</label>
+          <input type="text" id="name" placeholder="e.g. Jane Appleseed" />
+          <p class="msg">Can't be blank</p>
+        </div>
+        <div class="number-input">
+          <label for="number">Card Number</label>
+          <input
+            type="text"
+            id="number"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+          <p class="msg">Wrong format,numbers only</p>
+        </div>
+        <div>
+          <div class="date-input">
+            <label for="month">Exp. Date (MM/YY)</label>
+            <div>
+              <input type="number" id="month" placeholder="MM" />
+              <input type="number" id="year" placeholder="YY" />
+            </div>
+            <p class="msg">Can't be blank</p>
+          </div>
+          <div class="cvc-input">
+            <label for="cvc">CVC</label>
+            <input type="number" id="cvc" placeholder="e.g. 123" />
+            <p class="msg">Can't be blank</p>
+          </div>
+        </div>
+        <button type="submit">Confirm</button>
+      </form>
+      <section class="thanks-msg">
+        <img src="images/icon-complete.svg" alt="" />
+        <div>
+                 <h1>Thank you!</h1>
+        <p>We've added your card details</p>
+        </div>
+        <button class="continue">Continue</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
